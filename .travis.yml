@@ -2,6 +2,7 @@ gemfile:
   - gemfiles/rails4.1.gemfile
   - gemfiles/rails4.2.gemfile
 install:
+  - 'travis_retry bundle install'
   - 'travis_retry bundle exec appraisal'
 language:
   - ruby
