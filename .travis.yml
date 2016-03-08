@@ -21,7 +21,9 @@ env:
     - RAILS_ENV=test
 bundler_args: --without development vagrant
 script:
-  - bundle exec appraisal rake db:create db:migrate db:seed
+  - bundle exec appraisal rake db:create --trace
+  - bundle exec appraisal rake db:migrate --trace
+  - bundle exec appraisal rake db:seed --trace
   - bundle exec appraisal rake spec
 before_script:
   - sh -c "if [ '$DB' = 'postgresql' ]; then psql -c 'DROP DATABASE IF EXISTS ajax_validator_test;' -U postgres; fi"
