@@ -1,0 +1,24 @@
+.bundle/
+log/*.log
+pkg/
+spec/dummy/db/*.sqlite3
+spec/dummy/db/*.sqlite3-journal
+spec/dummy/log/*.log
+spec/dummy/tmp/
+spec/dummy/.sass-cache
+# MORE
+*.DS_Store
+*.swo
+*.swp
+*.gem
+/.env
+/tmp/*
+/coverage/*
+/gemfiles/*.lock
+/spec/dummy/public/system
+/spec/dummy/public/uploads
+/spec/dummy/public/assets
+/spec/dummy/db/schema.rb
+/spec/dummy/db/structure.sql
+/vendor/bundle
+*.gem
