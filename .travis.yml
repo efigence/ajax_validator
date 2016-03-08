@@ -12,10 +12,11 @@ cache: bundler
 services:
   - postgresql
 env:
-  - DB=postgresql
-  - DUMMY_DATABASE_USERNAME=postgres
-  - DUMMY_DATABASE_PASSWORD=''
-  - DATABASE_URL='postgres://localhost:5432'
+  global:
+    - DB=postgresql
+    - DUMMY_DATABASE_USERNAME=postgres
+    - DUMMY_DATABASE_PASSWORD=''
+    - DATABASE_URL='postgres://localhost:5432'
 bundler_args: --without development vagrant
 script:
   - bundle exec appraisal rake db:create db:migrate db:seed
