@@ -18,8 +18,8 @@ spec/dummy/.sass-cache
 /spec/dummy/public/system
 /spec/dummy/public/uploads
 /spec/dummy/public/assets
-# /spec/dummy/db/schema.rb
-# /spec/dummy/db/structure.sql
+/spec/dummy/db/schema.rb
+/spec/dummy/db/structure.sql
 /vendor/bundle
 *.gem
 *.sqlite3
