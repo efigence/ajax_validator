@@ -1,6 +1,12 @@
-# Ajax Validator [![Build Status](https://travis-ci.org/efigence/ajax_validator.svg?branch=master)](http://travis-ci.org/efigence/ajax_validator)
+# Ajax Validator
 
-### Ajax Live Form Validation Rails Engine
+> Ajax Live Form Validation Rails Engine
+
+[![Build Status](https://travis-ci.org/efigence/ajax_validator.svg?branch=master)](http://travis-ci.org/efigence/ajax_validator)
+
+## Demo
+
+![](https://cloud.githubusercontent.com/assets/34706/13599661/79374eba-e524-11e5-8e1b-e6f77891958d.gif)
 
 ## How to install
 

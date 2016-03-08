@@ -1,5 +1,0 @@
-- extract repo as gem
-- push to github
-- enable in travis
-- create an issue "Demo" on github and attach doc/demo.gif and link to it in readme.md
-- add tests
