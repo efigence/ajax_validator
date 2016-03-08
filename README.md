@@ -75,9 +75,12 @@ Include the needed javascript file in your application.js or application.js.coff
 
 ### How to test
     cd vendor/engines/ajax_validator/
+    bundle exec appraisal
+
     export DATABASE_URL='postgres://localhost:5432' AJAX_VALIDATOR_DATABASE_USERNAME=postgres AJAX_VALIDATOR_DATABASE_PASSWORD=p
 
     bundle exec appraisal rails-4.1 rake db:create db:migrate db:seed
+    bundle exec appraisal rake spec
 ---
 - Optional:
 
