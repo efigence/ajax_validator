@@ -88,7 +88,6 @@ GEM
       mime-types (>= 1.16, < 3)
       nokogiri (~> 1.5)
       rails (>= 3, < 5)
-    cucumber_scaffold (0.1.5)
     database_cleaner (1.5.1)
     diff-lcs (1.2.5)
     erubis (2.7.0)
@@ -221,7 +220,6 @@ DEPENDENCIES
   capybara-puma
   capybara-screenshot
   cucumber-rails (>= 1.4.0)
-  cucumber_scaffold
   database_cleaner
   factory_girl_rails
   formulaic

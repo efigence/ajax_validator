@@ -43,7 +43,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency('pry-byebug')
   s.add_development_dependency('factory_girl_rails')
   s.add_development_dependency('rspec-rails')
-  s.add_development_dependency('cucumber_scaffold')
 
   s.add_development_dependency('cucumber-rails', ['>= 1.4.0'])
   s.add_development_dependency('database_cleaner')
