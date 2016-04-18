@@ -93,4 +93,5 @@ Include the needed javascript file in your application.js or application.js.coff
 ## How to develop
     bundle exec rails g scaffold Post name:string --integration_tool=rspec --helper=false --assets=false
     bundle exec rails g cucumber_scaffold:feature Post name:string
-    bundle exec rails db:migrate
+    bundle exec rake db:migrate
+    bundle exec appraisal rails-4.1 rake app:cucumber features/manage_posts.feature
