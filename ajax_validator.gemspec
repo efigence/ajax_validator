@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = 'ajax_validator'
   s.version     = AjaxValidator::VERSION
   s.authors     = ['Marcin Kalita']
-  s.email       = ['mkalita@efigence.com']
+  s.email       = ['rubyconvict@gmail.com']
   s.homepage    = "https://github.com/efigence/ajax_validator"
   s.summary     = %q{Ajax Live Form Validation Rails Engine}
   s.description = %q{Ajax Validator is a Rails engine that allows to validate form fields.}
@@ -51,4 +51,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency('poltergeist')
   s.add_development_dependency('fuubar')
   s.add_development_dependency('capybara-puma')
+  s.add_development_dependency('capybara-screenshot')
 end
