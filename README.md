@@ -88,10 +88,7 @@ Include the needed javascript file in your application.js or application.js.coff
 ---
 
     bundle exec appraisal rails-4.1 rake spec
-    bundle exec appraisal rails-4.1 rake app:cucumber
 
 ## How to develop
     bundle exec rails g scaffold ajax_validator/post name:string --integration_tool=rspec --helper=false --assets=false
     bundle exec rake db:migrate
-    # bundle exec rails g cucumber_scaffold:feature ajax_validator/post name:string
-    # bundle exec appraisal rails-4.1 rake app:cucumber features/manage_ajax_validator/posts.feature

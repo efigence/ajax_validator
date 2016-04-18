@@ -5,8 +5,4 @@ source "https://rubygems.org"
 gem "appraisal"
 gem "rails", "~> 4.2.0"
 
-group :test do
-  gem "cucumber-rails", :require => false
-end
-
 gemspec :path => "../"
