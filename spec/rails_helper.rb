@@ -12,9 +12,6 @@ require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
 #~ADD
-# execute your testfiles directly rather than passing them to the rspec command
-# (and a few other tricks, like having tests run automatically when you execute a library file).
-require 'rspec/autorun'
 # require 'ajax_validator' NEEDED?
 require 'factory_girl_rails'
 require 'route_helper'
@@ -32,8 +29,9 @@ require 'route_helper'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
+
 # Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
-Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+Dir[File.join(File.dirname(__FILE__), '/support/**/*.rb')].each { |f| require f }
 # https://github.com/eliotsykes/rspec-rails-examples/tree/master/spec/support
 
 RSpec.configure do |config|
