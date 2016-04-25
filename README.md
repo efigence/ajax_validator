@@ -74,13 +74,34 @@ Include the needed javascript file in your application.js or application.js.coff
 - Copy over to multiple gemfiles: `bundle exec appraisal install`
 
 ### How to test
+- Install the latest PhantomJS:
+
+```
+    sudo su
+    cd /opt
+    wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+    tar xjvf phantomjs-2.1.1-linux-x86_64.tar.bz2
+    ln -s phantomjs-2.1.1-linux-x86_64 phantomjs
+    ln -s /opt/phantomjs/bin/phantomjs /usr/local/bin
+    exit
+```
+
+- Install gems
+```
     cd vendor/engines/ajax_validator/
     bundle exec appraisal
+```
 
+- Setup the database
+```
     export DATABASE_URL='postgres://localhost:5432' AJAX_VALIDATOR_DATABASE_USERNAME=postgres AJAX_VALIDATOR_DATABASE_PASSWORD=p
-
     bundle exec appraisal rails-4.1 rake db:create db:migrate db:seed
+```
+
+- Run tests
+```
     bundle exec appraisal rake spec
+```
 ---
 - Optional:
 
