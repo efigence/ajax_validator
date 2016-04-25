@@ -12,6 +12,8 @@
 #    in spec/rails_helper.rb (we're going to configure it in this file you're
 #    reading instead).
 
+require 'database_cleaner'
+
 # 3. Create a file like this one you're reading in spec/support/database_cleaner.rb:
 RSpec.configure do |config|
 

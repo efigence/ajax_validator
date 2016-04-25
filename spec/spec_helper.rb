@@ -47,6 +47,11 @@ RSpec.configure do |config|
   #~ADD
   config.order = :random
 
+  #~ADD https://github.com/mattheworiordan/capybara-screenshot#common-problems
+  config.append_after(:each) do
+    Capybara.reset_sessions!
+  end
+
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
