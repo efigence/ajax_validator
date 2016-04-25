@@ -4,7 +4,8 @@
 #
 # 1. Create a file like this one you're reading in spec/support/matchers.rb:
 
-Dir[Rails.root.join('spec/matchers/**/*.rb')].each { |f| require f }
+# Dir[Rails.root.join('spec/matchers/**/*.rb')].each { |f| require f }
+Dir[File.expand_path("../matchers/**/*.rb", File.dirname(__FILE__))].each { |f| require f }
 
 RSpec.configure do |config|
   config.include Matchers

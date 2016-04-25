@@ -2,4 +2,7 @@
 # for example SomeEngineController < ::BaseController,
 # class must exist in dummy app in order for routing tests to recognize it
 class BaseController
+  def index
+    head :ok
+  end
 end

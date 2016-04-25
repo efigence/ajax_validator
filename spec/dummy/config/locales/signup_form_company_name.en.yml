@@ -1,0 +1,11 @@
+en:
+  activemodel:
+    attributes:
+      signup_form_company_name:
+        name: "Company name"
+    errors:
+      models:
+        signup_form_company_name:
+          attributes:
+            name:
+              evil: "is evil"
