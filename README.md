@@ -13,7 +13,7 @@
 
 1. Add to `Gemfile`
 
-        gem 'ajax_validator', path: 'vendor/engines/ajax_validator'
+        gem 'ajax_validator'
 2. Bundle
 
         bundle install
@@ -91,5 +91,7 @@ Include the needed javascript file in your application.js or application.js.coff
     bundle exec appraisal rails-4.1 rake spec
 
 ## How to develop
+    gem 'ajax_validator', path: 'vendor/engines/ajax_validator'
+
     bundle exec rails g scaffold ajax_validator/post name:string --integration_tool=rspec --helper=false --assets=false
     bundle exec rake db:migrate
