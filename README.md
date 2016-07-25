@@ -2,6 +2,7 @@
 
 > Ajax Live Form Validation Rails Engine
 
+[![Gem Version](https://badge.fury.io/rb/ajax_validator.svg)](https://badge.fury.io/rb/ajax_validator)
 [![Build Status](https://travis-ci.org/efigence/ajax_validator.svg?branch=master)](http://travis-ci.org/efigence/ajax_validator)
 
 ## Demo
