@@ -82,8 +82,13 @@ module AjaxValidator
       else
         form_object_klass = nil
       end
-      guard_whitelist(resource_model)
-      resource_model_klass = constantize_klass(resource_model)
+      if resource_model.present?
+        guard_whitelist(resource_model)
+        resource_model_klass = constantize_klass(resource_model)
+      else
+        resource_model_klass = nil
+      end
+      guard_whitelist(Object) if form_object_klass.nil? && resource_model_klass.nil?
       [form_object_klass, resource_model_klass]
     end
 
