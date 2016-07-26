@@ -22,7 +22,7 @@
         AjaxValidator::Engine.setup do |config|
           config.ajax_validator_engine = {
             # if form object is used, both classes must be put here
-            whitelist_models: ['some_klass', 'some_module/some_klass']
+            whitelist_klasses: ['some_klass', 'some_module/some_klass']
           }
         end
 4. Copy migration (currently, not needed)
@@ -52,7 +52,7 @@ Include the needed javascript file in your application.js or application.js.coff
 
         Add these attributes on text input field:
             class: 'ajax_validator__field'
-            data-form-object='validations/signup_form_company_name' [Optional, leave empty string '' validate on model directly]
+            data-form-object='validations/signup_form_company_name' [Optional, leave empty string '' to validate on model directly]
             data-resource-model='company'
             data-resource-attr-name='name'
             data-ignore-resource-attr-value='false' [Optional, set to 'true' when attribute is assembled from additional params instead]
