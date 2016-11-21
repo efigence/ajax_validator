@@ -16,7 +16,7 @@ cache:
   bundler: true
   directories:
     - node_modules
-    - travis_phantomjs
+    # - travis_phantomjs
     - tmp/cache/assets/test/sprockets
 services:
   - postgresql
@@ -29,8 +29,9 @@ before_install:
   # - "if [ $(phantomjs --version) != '2.1.1' ]; then tar -xvf $PWD/travis_phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2 -C $PWD/travis_phantomjs; fi"
   # - "chmod +x $PWD/travis_phantomjs/phantomjs"
   # - "echo `phantomjs --version`"
-  - npm -g install phantomjs-prebuilt@2.1.1 --cache-min 999999 --phantomjs_cdnurl=http://cnpmjs.org/downloads
-  - "echo `phantomjs --version`"
+  - "echo $(phantomjs --version)"
+  - npm install phantomjs@2.1.1 --save-dev --verbose --cache-min 999999 --phantomjs_cdnurl=http://cnpmjs.org/downloads
+  - "echo $(phantomjs --version)"
 env:
   global:
     - DB=postgresql
