@@ -1,24 +1,3 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-
-development:
-  <<: *default
-  database: demo_development
-
-test:
-  <<: *default
-  database: demo_test
-
-production:
-  <<: *default
-  database: demo_production
-  username: demo
-  password: <%= ENV['DEMO_DATABASE_PASSWORD'] %>
-
-
-
 # PostgreSQL. Versions 8.2 and up are supported.
 #
 # Install the pg driver:
