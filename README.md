@@ -75,6 +75,12 @@ Include the needed javascript file in your application.js or application.js.coff
 - Copy over to multiple gemfiles: `bundle exec appraisal install`
 
 ### How to test
+    $ sudo nano -w /etc/postgresql/9.3/main/pg_hba.conf
+    # Database administrative login by Unix domain socket
+    # local   all             postgres                                trust
+    
+    $ sudo service postgresql reload
+
     cd vendor/engines/ajax_validator/
     bundle exec appraisal
 
