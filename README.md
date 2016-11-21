@@ -78,7 +78,7 @@ Include the needed javascript file in your application.js or application.js.coff
     $ sudo nano -w /etc/postgresql/9.3/main/pg_hba.conf
     # Database administrative login by Unix domain socket
     # local   all             postgres                                trust
-    
+
     $ sudo service postgresql reload
 
 - Install the latest PhantomJS:
@@ -94,7 +94,6 @@ Include the needed javascript file in your application.js or application.js.coff
 
 - Install gems
 ```
-    cd vendor/engines/ajax_validator/
     bundle exec appraisal
 ```
 
@@ -121,3 +120,6 @@ Include the needed javascript file in your application.js or application.js.coff
 
     bundle exec rails g scaffold ajax_validator/post name:string --integration_tool=rspec --helper=false --assets=false
     bundle exec rake db:migrate
+
+    cd spec/dummy/
+    bundle exec rails s
