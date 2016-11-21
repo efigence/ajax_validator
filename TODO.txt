@@ -1,1 +1,1 @@
-- maybe install phantomjs via npm
+- see: https://github.com/teampoltergeist/poltergeist/blob/master/.travis.yml
