@@ -105,7 +105,15 @@ module AjaxValidator
     end
 
     def validate_resource_model(resource_model_klass)
-      klass_object = resource_model_klass.new(resource_instance_additional_params)
+      if resource_instance_additional_params.nil?
+        begin
+          klass_object = resource_model_klass.new
+        rescue ArgumentError
+          resource_model_klass.new({})
+        end
+      else
+        klass_object = resource_model_klass.new(resource_instance_additional_params)
+      end
       # run before_validation callback for active model (https://github.com/rails/rails/issues/718#issuecomment-1170499)
       klass_object.try(:run_callbacks, :validation) { false }
       if ignore_resource_attr_value
@@ -125,4 +133,3 @@ module AjaxValidator
     end
   end
 end
-
