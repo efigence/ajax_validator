@@ -59,6 +59,8 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
   config.include RouteHelper, type: :routing
   config.include RouteHelper, type: :controller
+  config.include Rails.application.routes.url_helpers, type: :routing
+  config.include Rails.application.routes.mounted_helpers, type: :routing # main_app.some_path
 end
 
 #~ADD
